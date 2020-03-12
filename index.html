@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ludovico</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <ul class="mobile-menu">
                 <li><a href="javascript:;">Home</a></li>
@@ -29,7 +29,8 @@
                 <div class="col-md-6">
                     <img src="assets/img/logo.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 d-flex">
+                    <a href="javascript:;" class="associe-se">Associe-se</a>
                     <div class="plano-mensal">
                         <h2>Plano Mensal</h2>
                         <h3>R$ 69,90</h3>
@@ -46,14 +47,16 @@
     </section>
     <section class="py-4 o-que-e">
         <div class="container"> 
-            <h2 class="icon-ight">Quem é ludovico?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro hic iusto quis est eum. Rem, porro. Distinctio expedita, architecto voluptates dolor, alias nisi commodi aperiam voluptatibus enim autem, voluptate quos.</p>
+            <h2 class="icon-right">Quem é ludovico?</h2>
+            <div class="pl-md-5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro hic iusto quis est eum. Rem, porro. Distinctio expedita, architecto voluptates dolor, alias nisi commodi aperiam voluptatibus enim autem, voluptate quos.</p>
+            </div>
         </div>
     </section>
     <section class="py-4 como-funciona">
         <div class="container">
-            <h2 class="icon-ight">Como funciona?</h2>
-            <div class="row">
+            <h2 class="icon-right">Como funciona?</h2>
+            <div class="row pl-md-5">
                 <div class="col-md-4">
                     <div class="flex">
                         <div class="img-how">
@@ -96,7 +99,8 @@
     </section>
     <section class="melhor-conteudo">
         <div class="container">
-            <div class="row">
+            <h2 class="icon-right">O melhor conteúdo!</h2>
+            <div class="row pl-md-5">
                 <div class="col-md-6">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias perferendis, assumenda quos est iusto provident exercitationem repellendus ab! Quae natus explicabo laboriosam suscipit eaque quas totam voluptatibus similique vitae molestias.</p>
                 </div>
@@ -112,6 +116,7 @@
 
     <section class="curadores">
         <div class="container">
+            <h2 class="icon-right">Patronos e curadores</h2>
             <div class="row">
                 <div class="col-md-4">
                     <img src="" alt="" class="img-fluid">
@@ -162,7 +167,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <h2>Saiba mais sobre os nossos lançamentos</h2>
+                    <h2 class="icon-right">Saiba mais sobre os nossos lançamentos</h2>
                     <form action="javascript:;">
                         <input type="text">
                         <input type="submit" value="OK">
@@ -192,7 +197,7 @@
 
     <section class="faq">
         <div class="container">
-            <h2>Perguntas frequentes</h2>
+            <h2 class="icon-right">Perguntas frequentes</h2>
             <div class="row">
                 <div class="col-md-8">
                     tabs do boostrap aqui
@@ -206,14 +211,20 @@
 
     <section class="contato">
         <div class="container">
-            <h2>Contato</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fugit natus ducimus ullam a, ad nostrum numquam animi quae similique. Alias molestiae dolorem exercitationem officiis perferendis accusamus soluta debitis quasi?</p>
+            <h2 class="icon-right">Contato</h2>
             <form action="javascript:;">
-                <input type="text" placeholder="nome">
-                <input type="email" placeholder="e-mail">
-                <input type="text" placeholder="assunto">
-                <textarea name="" id="" cols="30" rows="10" placeholder="mensagem"></textarea>
-                <input type="submit" value="enviar mensagem">
+                <div class="row pl-md-5">
+                    <div class="col-md-6">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fugit natus ducimus ullam a, ad nostrum numquam animi quae similique. Alias molestiae dolorem exercitationem officiis perferendis accusamus soluta debitis quasi?</p>
+                        <input type="text" placeholder="nome">
+                        <input type="email" placeholder="e-mail">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" placeholder="assunto">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="mensagem"></textarea>
+                        <input type="submit" value="enviar mensagem">
+                    </div>         
+                </div>        
             </form>
         </div>
     </section>
