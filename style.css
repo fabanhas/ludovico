@@ -71,6 +71,21 @@
     border: none;
     padding:10px;
     width: 100%;
+    margin-bottom: .5rem;
+    font-size: 20px;
+}
+.contato form input[type="submit"]{
+    color: #fff;
+    background-color: #345559;
+    text-transform: uppercase;
+    max-width: 195px;
+    margin-left: auto;
+    display: block;
+    border-radius: 30px;
+    font-size: 15px;
+}
+.contato ::placeholder{
+    text-transform: uppercase;
 }
 .planos{
     background-image: url(assets/img/fundo-planos.png);
@@ -93,4 +108,34 @@ h2.yellow{
 .footer p {
     margin-bottom: 0;
     text-align: center;
+}
+.news input{
+    width: 100%;
+    border: none;
+    background: #fff;
+    color: #000;
+}
+.news form{
+    position: relative;
+}
+.news input[type="submit"]{
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+}
+@media screen and (max-width: 768px){
+    .banner{
+        background-image: url(assets/img/banner-mobile.png);
+        height: 500px;
+    }
+    .news{
+        background-image: url(assets/img/fundo-news-mobile.png);
+        height: 530px;
+    }
 }
