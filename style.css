@@ -2,6 +2,9 @@
 *{
     font-family: 'Aleo', serif;
 }
+p{
+    color: #999999;
+}
 .icon-right{
     color: #345559;
     font-size: 48px;
@@ -10,6 +13,9 @@
 }
 .header{
     padding: 15px 0;
+    background-image: linear-gradient(90deg,transparent, white);
+    position: absolute;
+    width: 100%;
 }
 .mobile-menu{
     list-style: none;
@@ -35,17 +41,19 @@
     font-weight: bold;
 }
 .banner{
-    background-image: url(assets/img/banner.png);
-    height: 500px;
+    background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/banner.png);
+    height: 550px;
+    padding-top: 90px;
 }
 .banner .container, .banner .row{
     height: 100%;
 }
 .banner .col-md-6.d-flex{
     height: 100%;
-    align-items: flex-end;
-    padding-bottom: 2rem;
+    padding-top: 200px;
+    padding-bottom: 70px;
     flex-flow: wrap row;
+    justify-content: space-between;
 }
 .associe-se{
     color: #fff;
@@ -60,12 +68,14 @@
     font-style: italic;
     letter-spacing: .2rem;
     line-height: 2;
+    margin-bottom: 1rem;;
 }
 
 .contato{
-    background-image: url(assets/img/fundo-contato.png);
-    height: 550px;
+    background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/fundo-contato.png);
+    height: auto;
     padding: 50px 0;
+    background-size: cover;
 }
 .contato form input, .contato form textarea{
     border: none;
@@ -88,7 +98,7 @@
     text-transform: uppercase;
 }
 .planos{
-    background-image: url(assets/img/fundo-planos.png);
+    background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/fundo-planos.png);
     height: 305px;
     background-size: cover;
 }
@@ -97,7 +107,7 @@ h2.yellow{
     color: #ffcc33;
 }
 .news{
-    background-image: url(assets/img/fundo-news.png);
+    background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/fundo-news.png);
     height: 275px;
 }
 .footer{
@@ -129,13 +139,367 @@ h2.yellow{
     right: -5px;
     top: -5px;
 }
+.plano-mensal, .plano-anual{
+    text-align: center;
+    padding: 10px 30px;
+    cursor: pointer;    
+}
+.plano-mensal h2, .plano-anual h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+.plano-mensal h3, .plano-anual h3{
+    font-size: 36px;
+    font-weight: bold;
+}
+.plano-mensal small, .plano-anual small{
+    font-size: 20px;
+}
+.plano-mensal{
+    background-color: #336382;
+    color: #ffcc33;
+}
+.plano-anual{
+    background-color: #cbb323;
+    color: #345559;
+}
+#accordion .card{
+    margin-bottom: 1rem;
+    border: none;
+}
+#accordion .card .card-header{
+    padding: 0;
+    text-align: center;
+    border-radius: 30px;
+}
+#accordion .card .card-header button{
+    color: #345559;
+    font-weight: bold;
+}
+.citacoes{
+    background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/fundo-citacoes.png);
+    height: 350px;
+}
+.melhor-conteudo{
+    background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/fundo-conteudo.png);
+    background-repeat: no-repeat;
+}
+.grayscale img{
+    filter: grayscale(1);
+}
+
+.curador{
+    transition: all linear .5s;
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    margin: 0;
+}
+.curador p{
+    font-size: 24px;
+}
+.curador.remover{
+    padding: 50px 150px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.slider-item p{
+    color: #fff;
+    font-size: 26px;
+    padding: 2px;
+}
+.slider-item p.autor{
+    font-size: 24px;
+    text-align: right;
+}
+.slider-citacoes{
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    padding: 50px 0;
+}
+.slider-citacoes::after, .slider-citacoes::before{
+    content: "";
+    width: 45px;
+    height: 40px;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+.slider-citacoes::after{
+    left: -50px;
+    top: 15px;
+    background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/aspas-esq.png);
+}
+.slider-citacoes::before{
+    right: -50px;
+    bottom: 0;
+    background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/aspas-dir.png);
+}
+.slick-dots {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100px;
+}
+.slick-dots li {
+    list-style: none;
+    margin: 15px 0;
+}
+.slick-dots button {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    text-indent: -9999px;
+    outline: 0;
+    font-size: 20px;
+    border: 1px solid #ffcc33;
+    background-color: transparent;
+}
+.slick-dots li.slick-active button{
+    background-color: #ffcc33;
+}
+.planos .plano-mensal, .planos .plano-anual{
+    padding: 20px 0;
+    max-width: 270px;
+    margin: auto;
+}
+.planos .plano-mensal p, .planos .plano-anual p{
+    color: #fff;
+    font-size: 18px;
+}
+#quem{
+    background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/fundo-contato.png);
+}
+.img-how{
+    height: 300px;
+    text-align: center;
+}
+.img-how img{
+    margin: auto;
+}
+.img-how ~ h2{
+    color: #ffcc33;
+    max-width: 60%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+#como hr{
+    border-top: 1px solid #000;
+}
+.contato p{
+    font-size: 22pt;
+    color: #999999;
+}
+.news .container{
+    height: 100%;
+}
+.news .container .row{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.news h2{
+    font-size: 22pt;
+    font-weight: bold;
+}
+.links a{
+    margin-right: 1rem;
+}
 @media screen and (max-width: 768px){
+    body.open{
+        overflow: hidden;
+    }
     .banner{
-        background-image: url(assets/img/banner-mobile.png);
+        background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/banner-mobile.png);
         height: 500px;
     }
     .news{
-        background-image: url(assets/img/fundo-news-mobile.png);
+        background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/fundo-news-mobile.png);
         height: 530px;
+    }
+    .citacoes{
+        background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/fundo-citacoes-mobile.png);
+        background-size: cover;
+        padding-top: 25px;
+    }
+    .header a.btn-assine-float{
+        position: absolute;
+        right: 15px;
+        top: 20px;
+    }
+    .header{
+        padding: 0;
+        background: transparent;
+    }
+    .mobile-menu{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: -100%;
+        background-color: #336382;
+        transition: all .3s;
+        top: 0;
+        bottom: 0;
+        justify-content: flex-start;
+        flex-flow: wrap column;
+        padding: 30px;
+    }
+    .mobile-menu.open{
+        left: 0;
+        z-index: 999;
+    }
+    .mobile-menu li{
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .mobile-menu li a{
+        color: #fff;
+        font-size: 24px;
+        text-transform: capitalize;
+    }
+    .mobile-menu a.btn-close{
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        font-size: 30px;
+        font-family: cursive;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .slider-item p{
+        font-size: 15px;
+    }
+    .slider-citacoes{
+        max-width: 85%;
+    }
+    .slider-citacoes::before{
+        right: -35px;
+    }
+    .slider-citacoes::after{
+        left: -35px;
+    }
+    .slick-dots{
+        right: 0px;
+        left: 0;
+        margin: auto;
+        padding: 0;
+        text-align: center;
+        top: 15px;
+    }
+    .slick-dots li{
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .banner{
+        padding-top: 30px;
+    }
+    .hamb-icon{
+        position: relative;
+        top: 10px;
+    }
+    .btn-assine-float{
+        background-color:#345559 ;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .associe-se{
+        display: none;
+    }
+    .banner .col-md-6.d-flex{
+        padding: 0;
+        height: auto;
+        justify-content: space-evenly;
+    }
+    .plano-mensal, .plano-anual{
+        width: 165px;
+        height: 120px;
+        padding: 10px;
+    }
+    .plano-mensal h2, .plano-anual h2{
+        font-size: 22px;
+    }
+    .plano-mensal h3, .plano-anual h3{
+        font-size: 24px;
+    }
+    .plano-mensal small, .plano-anual small{
+        font-size: 16px;
+    }
+    .icon-right{
+        max-width: 75%;
+    }
+    .flex{
+        display: flex;
+        flex-flow: wrap row;
+        margin-bottom: 1.5rem;
+    }
+    .img-how{
+        max-width: 40%;
+        height: auto;
+    }
+    .img-how ~ h2{
+        width: 50%;
+    }
+    .icon-right{
+        position: relative;
+    }
+    .icon-right::after{
+        background-repeat: no-repeat;
+        right: -100px;
+        position: absolute;
+        top: 10px;
+        content: "";
+        background-size: cover;
+    }
+    #quem .icon-right::after{
+        background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/hat.png);
+        height: 85px;
+        width: 117px;
+    }
+    #como .icon-right::after{
+        background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/process.png);
+        height: 107px;
+        width: 107px;
+    }
+    .melhor-conteudo .icon-right::after{
+        background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/estrela.png);
+        height: 129px;
+        width: 78px;
+        right: -75px;
+        top: 0;
+    }
+    #curadores .icon-right::after{
+        background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/coroa.png);
+        height: 97px;
+        width: 113px;
+    }
+    #faq .icon-right::after{
+        background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/ask.png);
+        height: 101px;
+        width: 101px;
+    }
+    #contato .icon-right::after{
+        background-image: url(https://assets.betalabs.net/production/calhamaco/images/stores/1/email.png);
+        height: 83px;
+        width: 103px;
+        right: -50px;
+        top: -10px;
+    }
+    .contato{
+        height: auto;
+    }
+    .planos{
+        height: auto;
+        background: none;
+    }
+    .curador.open{
+        height: auto;
+        width: 100%;
+        opacity: 1;
     }
 }

@@ -5,31 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ludovico</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
+            <a href="javascript:;" class="hamb-icon d-inline-block d-md-none">
+                <img src="assets/img/hamb.png" alt="">
+            </a>
             <ul class="mobile-menu">
-                <li><a href="javascript:;">Home</a></li>
-                <li><a href="javascript:;">Quem é ludovico?</a></li>
-                <li><a href="javascript:;">Como funciona?</a></li>
-                <li><a href="javascript:;">Curadores</a></li>
-                <li><a href="javascript:;">Faq</a></li>
-                <li><a href="javascript:;">contato</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#quem">Quem é ludovico?</a></li>
+                <li><a href="#como">Como funciona?</a></li>
+                <li><a href="#curadores">Curadores</a></li>
+                <li><a href="#faq">Faq</a></li>
+                <li><a href="#contato">contato</a></li>
                 <li><a href="javascript:;">login</a></li>
-                <li><a href="javascript:;" class="btn-assine">associe-se</a></li>
+                <li><a href="#planos" class="btn-assine d-none d-md-block">associe-se</a></li>
+                <a href="javascript:;" class="btn-close">X</a>
             </ul>
+            <a href="#planos" class="btn-assine-float d-block d-md-none">associe-se</a>
         </div>
     </header>
     <section class="banner">
-        <div class="container px-5 px-md-0">
+        <div class="container px-4 px-md-0">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 col-9">
                     <img src="assets/img/logo.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-md-6 d-flex">
+                <div class="col-md-6 d-flex" data-aos="fade-left">
                     <a href="javascript:;" class="associe-se">Associe-se</a>
                     <div class="plano-mensal">
                         <h2>Plano Mensal</h2>
@@ -45,61 +52,68 @@
             </div>
         </div>
     </section>
-    <section class="py-4 o-que-e">
+    <section class="py-5 o-que-e" id="quem">
         <div class="container px-5 px-md-0"> 
-            <h2 class="icon-right">Quem é ludovico?</h2>
-            <div class="pl-md-5">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro hic iusto quis est eum. Rem, porro. Distinctio expedita, architecto voluptates dolor, alias nisi commodi aperiam voluptatibus enim autem, voluptate quos.</p>
+            <h2 class="icon-right" data-aos="fade">Quem é ludovico?</h2>
+            <div class="row pl-md-5">
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro hic iusto quis est eum. Rem, porro. Distinctio expedita, architecto voluptates dolor, alias nisi commodi aperiam voluptatibus enim autem, voluptate quos.</p>
+                </div>
+                <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro hic iusto quis est eum. Rem, porro. Distinctio expedita, architecto voluptates dolor, alias nisi commodi aperiam voluptatibus enim autem, voluptate quos.</p>
+                </div>
             </div>
+            
+                
         </div>
     </section>
-    <section class="py-4 como-funciona">
+    <section class="py-4 como-funciona" id="como">
         <div class="container px-5 px-md-0">
-            <h2 class="icon-right">Como funciona?</h2>
+            <h2 class="icon-right" data-aos="fade">Como funciona?</h2>
             <div class="row pl-md-5">
                 <div class="col-md-4">
                     <div class="flex">
                         <div class="img-how">
-                            <img src="" alt="">
+                            <img class="img-fluid" src="assets/img/mensal.png" alt="">
                         </div>
-                        <h2>Mensal</h2>
+                        <h2 class="text-center">Mensal</h2>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda velit debitis nam unde sapiente adipisci? Incidunt nulla eum laboriosam est libero quo at minus odio iure quis, nihil doloremque aliquam.</p>
                 </div>
                 <div class="col-md-4">
                     <div class="flex">
                         <div class="img-how">
-                            <img src="" alt="">
+                            <img class="img-fluid" src="assets/img/mac.png" alt="">
                         </div>
-                        <h2>Surpresa</h2>
+                        <h2 class="text-center">Surpresa</h2>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda velit debitis nam unde sapiente adipisci? Incidunt nulla eum laboriosam est libero quo at minus odio iure quis, nihil doloremque aliquam.</p>
                 </div>
                 <div class="col-md-4">
                     <div class="flex">
                         <div class="img-how">
-                            <img src="" alt="">
+                            <img class="img-fluid" src="assets/img/globo.png" alt="">
                         </div>
-                        <h2>Tudo o que interessa</h2>
+                        <h2 class="text-center">Tudo o que interessa</h2>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda velit debitis nam unde sapiente adipisci? Incidunt nulla eum laboriosam est libero quo at minus odio iure quis, nihil doloremque aliquam.</p>
                 </div>               
             </div>
-            <hr>
-            <div class="row">
+            <hr class="pl-md-5">
+            <div class="row pl-md-5">
                 <div class="col-md-6">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nam optio eveniet, veniam repellat soluta dignissimos mollitia est impedit architecto ab minima dolore, suscipit omnis dolor pariatur? Officia, ex odit!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae reiciendis iste deleniti sit, voluptates, totam consectetur vero quibusdam tempore facere aperiam, nulla neque consequatur voluptatem hic corporis vel libero optio.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="" alt="">
+                    <img class="img-fluid" src="assets/img/grafico.png" alt="">
                 </div>
             </div>
         </div>
     </section>
-    <section class="melhor-conteudo">
+    <section class="melhor-conteudo py-5">
         <div class="container px-5 px-md-0">
-            <h2 class="icon-right">O melhor conteúdo!</h2>
+            <h2 class="icon-right" data-aos="fade">O melhor conteúdo!</h2>
             <div class="row pl-md-5">
                 <div class="col-md-6">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias perferendis, assumenda quos est iusto provident exercitationem repellendus ab! Quae natus explicabo laboriosam suscipit eaque quas totam voluptatibus similique vitae molestias.</p>
@@ -108,33 +122,59 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam temporibus inventore, sequi libero alias, rem maxime perferendis reprehenderit quis cum debitis ipsa soluta, quos aperiam nostrum quisquam hic culpa asperiores?</p>
                 </div>
 
-                <div id="div-melhor-conteudo"></div>
-
+                <img src="assets/img/kit.png" alt="" class="img-fluid">
             </div>
         </div>
     </section>
 
-    <section class="curadores">
+    <section class="curadores py-4" id="curadores">
         <div class="container px-5 px-md-0">
-            <h2 class="icon-right">Patronos e curadores</h2>
+            <h2 class="icon-right" data-aos="fade">Patronos e curadores</h2>
+            
             <div class="row">
-                <div class="col-md-4">
-                    <img src="" alt="" class="img-fluid">
+                <div class="col-md-4 mb-4 cura-img grayscale" target="#cura1">
+                    <img src="assets/img/cura6-normal.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-md-4">
-                    <img src="" alt="" class="img-fluid">
+                <div class="curador" id="cura1">
+                    <div class="content">
+                        <h2>Helio Beltrao</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet a iusto repellendus similique cumque officia repellat minus tempora est dolorum qui, voluptates ab perspiciatis quas? Quidem minus quis consectetur nam?</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="" alt="" class="img-fluid">
+                <div class="col-md-4 mb-4 cura-img grayscale" target="#cura2">
+                    <img src="assets/img/cura5.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-md-4">
-                    <img src="" alt="" class="img-fluid">
+                <div class="curador" id="cura2">
+                    <h2>Helio Belao</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet a iusto repellendus similique cumque officia repellat minus tempora est dolorum qui, voluptates ab perspiciatis quas? Quidem minus quis consectetur nam?</p>
                 </div>
-                <div class="col-md-4">
-                    <img src="" alt="" class="img-fluid">
+                <div class="col-md-4 mb-4 cura-img grayscale" target="#cura3">
+                    <img src="assets/img/cura4.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-md-4">
-                    <img src="" alt="" class="img-fluid">
+                <div class="curador" id="cura3">
+                    <h2>Helio Corotao</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet a iusto repellendus similique cumque officia repellat minus tempora est dolorum qui, voluptates ab perspiciatis quas? Quidem minus quis consectetur nam?</p>
+                </div>
+                <div class="col-md-4 mb-4 cura-img grayscale" target="#cura4">
+                    <img src="assets/img/cura3.png" alt="" class="img-fluid">
+                </div>
+                <div class="curador" id="cura4">
+                    <h2>Helio Whiskao</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet a iusto repellendus similique cumque officia repellat minus tempora est dolorum qui, voluptates ab perspiciatis quas? Quidem minus quis consectetur nam?</p>
+                </div>
+                <div class="col-md-4 mb-4 cura-img grayscale" target="#cura5">
+                    <img src="assets/img/cura2.png" alt="" class="img-fluid">
+                </div>
+                <div class="curador" id="cura5">
+                    <h2>Helio Tempao</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet a iusto repellendus similique cumque officia repellat minus tempora est dolorum qui, voluptates ab perspiciatis quas? Quidem minus quis consectetur nam?</p>
+                </div>
+                <div class="col-md-4 mb-4 cura-img grayscale" target="#cura6">
+                    <img src="assets/img/cura1.png" alt="" class="img-fluid">
+                </div>
+                <div class="curador" id="cura6">
+                    <h2>Helio Logao</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet a iusto repellendus similique cumque officia repellat minus tempora est dolorum qui, voluptates ab perspiciatis quas? Quidem minus quis consectetur nam?</p>
                 </div>
             </div>
         </div>
@@ -143,54 +183,77 @@
     <section class="citacoes">
         <div class="container">
             <div class="slider-citacoes">
-
-            </div>
+                <div class="slider-item">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt non eveniet quasi, illum quae. Nemo placeat suscipit corporis quae illum hic obcaecati eos, nostrum, est nesciunt rem quis cumque.</p>
+                    <p class="autor">Lorem Ipsum</p>
+                </div>
+                <div class="slider-item">
+                    <p>O pior cego é aquele que não tem olho</p>
+                    <p class="autor">Lorem Ipsum</p>
+                </div>
+                <div class="slider-item">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sunt non eveniet quasi, illum quae. Nemo placeat suscipit corporis quae illum hic obcaecati eos, nostrum, est nesciunt rem quis cumque.</p>
+                    <p class="autor">Lorem Ipsum</p>
+                </div>
+            </div>  
         </div>
     </section>
 
-    <section class="planos">
+    <section class="planos" id="planos">
         <div class="container">
-            <div class="row">
+            <div class="row py-5">
                 <div class="col-md-4">
-
+                    <div class="plano-mensal">
+                        <h2>Plano Mensal</h2>
+                        <h3>R$ 69,90</h3>
+                        <p>Lorem ipsum dolor sit amet con sectetur adipis cing elit, sed d</p>
+                        <small>+ taxa de entrega</small>
+                    </div>
                 </div>
-                <div class="col-md-4">
+
+                <div class="col-md-4 text-center">
                     <h2 class="yellow">
                         ASSINE
                         AGORA
                     </h2>
                 </div>
+
                 <div class="col-md-4">
-                    
+                    <div class="plano-anual">
+                        <h2>Plano Anual</h2>
+                        <h3>R$ 59,90</h3>
+                        <p>Lorem ipsum dolor sit amet con sectetur adipis cing elit, sed d</p>
+                        <small>+ taxa de entrega</small>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="news">
         <div class="container px-5 px-md-0">
-            <div class="row">
-                <div class="col-md-5">
-                    <h2>Saiba mais sobre os nossos lançamentos</h2>
+            <div class="row pt-4">
+                <div class="col-md-4 text-right">
+                    <h2 data-aos="fade" class="news-one">Saiba mais sobre os<br> nossos lançamentos</h2>
                     <form action="javascript:;">
                         <input type="text">
                         <input type="submit" value="OK">
                     </form>
                 </div>
-                <div class="col-md-5">
-                    <img src="" alt="" class="img-fluid">
+                <div class="col-md-5 text-center">
+                    <img src="assets/img/logo-head.png" alt="" class="img-fluid">
                     <h2>Acompanhe a ludovico:</h2>
                     <div class="links">
                         <a href="javascript:;">
-                            <img src="" alt="" class="img-fluid">
+                            <img src="assets/img/twitter.png" alt="" class="img-fluid">
                         </a>
                         <a href="javascript:;">
-                            <img src="" alt="" class="img-fluid">
+                            <img src="assets/img/insta.png" alt="" class="img-fluid">
                         </a>
                         <a href="javascript:;">
-                            <img src="" alt="" class="img-fluid">
+                            <img src="assets/img/face.png" alt="" class="img-fluid">
                         </a>
                         <a href="javascript:;">
-                            <img src="" alt="" class="img-fluid">
+                            <img src="assets/img/youtube.png" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div>
@@ -198,23 +261,67 @@
         </div>
     </section>
 
-    <section class="faq">
+    <section class="faq py-5" id="faq">
         <div class="container px-5 px-md-0">
-            <h2 class="icon-right">Perguntas frequentes</h2>
-            <div class="row">
-                <div class="col-md-8">
-                    tabs do boostrap aqui
+            <h2 class="icon-right" data-aos="fade">Perguntas frequentes</h2>
+            <div class="row justify-content-end">
+                <div class="col-md-6">
+                    <div id="accordion" class="">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                O que é Ludovico?
+                              </button>
+                            </h5>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Collapsible Group Item #2
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Collapsible Group Item #3
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
                 <div class="col-md-4 d-none d-md-block">
-                    <img src="" alt="" class="img-fluid">
+                    <img src="assets/img/interrogacao.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contato">
+    <section class="contato" id="contato">
         <div class="container px-5 px-md-0">
-            <h2 class="icon-right">Contato</h2>
+            <h2 class="icon-right" data-aos="fade">Contato</h2>
             <form action="javascript:;">
                 <div class="row pl-md-5">
                     <div class="col-md-6">
@@ -236,8 +343,14 @@
             <p>Desenvolvido por #coisadelivreiro &reg;</p>
         </div>
     </footer>
-
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
